@@ -1,9 +1,0 @@
-syntax = "proto3";
-package muun;
-
-option go_package = "github.com/almogori/muun";
-
-message Stock {
-        string ticker = 1;
-        double strike = 2;
-}

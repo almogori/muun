@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package muun;
+
+option go_package = "github.com/almogori/muun";
+
+message Stock {
+        string ticker = 1;
+        double strike = 2;
+}
+
+
+message GetStockPriceRequest {
+        string ticker = 1;
+}
+
+message GetStockPriceResponse {
+        double strike = 1;
+}
+
+service StockService {
+        rpc GetStockPrice (GetStockPriceRequest) returns (GetStockPriceResponse) {}
+}

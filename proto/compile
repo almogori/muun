@@ -1,0 +1,2 @@
+protoc --go_out=. --go-grpc_out=. muun.proto --go_opt=paths=source_relative --go-grpc_opt=paths=source_relative
+mv *.go ../muun/.
